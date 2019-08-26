@@ -297,7 +297,6 @@ To learn more about enodes and enode format, visit the [Enode Wiki page](https:/
 ##### Starting up your member nodes
 
 With the bootnode operational and externally reachable (you can try `telnet <ip> <port>` to ensure it's indeed reachable), start every subsequent Geth node pointed to the bootnode for peer discovery via the `--bootnodes` flag. It will probably be desirable to keep private network data separate from defaults; to do so, specify a custom `--datadir` and/or `--chain` flag.
-
 ```
 $ geth --datadir=path/to/custom/data/folder \
        --chain=kittynet \
